@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TOEIC Vocab App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">TOEIC Vocab</div>
+      <nav>
+        <button id="nav-home">Home</button>
+        <button id="nav-topics">Topics</button>
+        <button id="nav-dashboard">Dashboard</button>
+        <button id="nav-wrong">Wrong Words</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- dynamic content -->
+  </main>
+
+  <template id="topic-card">
+    <div class="card topic-card">
+      <h3 class="topic-name"></h3>
+      <p class="topic-desc"></p>
+      <div class="card-actions">
+        <button class="btn study">Study</button>
+        <button class="btn flash">Flashcard</button>
+        <button class="btn quiz">Minigame</button>
+      </div>
+    </div>
+  </template>
+
+  <div id="loading" class="loading">Loading...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
