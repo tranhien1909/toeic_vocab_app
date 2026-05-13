@@ -112,7 +112,7 @@ async function renderStudy(topicId, topicName){
     <div class="muted">${v.word_type} • ${v.collocation}</div>
     <div style="margin-top:8px">${v.example}<div class="muted">${v.example_meaning}</div></div>
     <div class="controls" style="margin-top:12px">
-      <button class="btn btn-ghost" id="speak">🔊 Pronounce</button>
+      <button class="btn btn-ghost" id="speak">🔊</button>
       <button class="btn" id="prev">Previous</button>
       <button class="btn" id="remember">Đã nhớ</button>
       <button class="btn" id="review">Cần ôn lại</button>
@@ -141,7 +141,7 @@ async function renderFlashcards(topicId, topicName){
   const back = document.createElement('div'); back.className='card-face card-back';
   inner.appendChild(front); inner.appendChild(back); fc.appendChild(inner);
   const ctrl = document.createElement('div'); ctrl.style.display='flex'; ctrl.style.flexDirection='column'; ctrl.style.gap='8px';
-  const speak = document.createElement('button'); speak.className='btn btn-ghost'; speak.textContent='🔊 Pronounce';
+  const speak = document.createElement('button'); speak.className='btn btn-ghost'; speak.textContent='🔊';
   const prev = document.createElement('button'); prev.className='btn'; prev.textContent='Previous';
   const next = document.createElement('button'); next.className='btn'; next.textContent='Next';
   ctrl.appendChild(speak); ctrl.appendChild(prev); ctrl.appendChild(next);
@@ -282,7 +282,7 @@ async function renderWrongWords(){
 
     const speakBtn = document.createElement('button');
     speakBtn.className = 'btn btn-ghost';
-    speakBtn.textContent = '🔊 Pronounce';
+    speakBtn.textContent = '🔊';
     speakBtn.addEventListener('click', ()=>speakEnglish(w.word));
 
     const studyBtn = document.createElement('button');
